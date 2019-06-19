@@ -1,0 +1,66 @@
+!Colors from CDE's Crimson palette.
+#define WIDGET_BG #ae00b200c300
+#define ACTIVE_BG #b2004d007a00
+#define ACTIVE_FG white
+#define TEXT_BG   #ff00f700e900
+#define TEXT_FG   black
+#define SEL_BG    #71008b00a500
+#define SEL_FG    white
+
+!all Xt apps
+*background: WIDGET_BG
+!*highlightThickness: 1
+!*shadowThickness: 1
+
+*.renderTable: variable
+*.renderTable.variable.fontName: NotoSans
+*.renderTable.variable.fontSize: 10
+*.renderTable.variable.fontType: FONT_IS_XFT
+
+!mwm
+Mwm*foreground: black
+Mwm*background: WIDGET_BG
+Mwm*activeForeground: ACTIVE_FG
+Mwm*activeBackground: ACTIVE_BG
+Mwm*fontList: variable
+!Mwm*fontList.variable.fontType: FONT_IS_XFT
+!Mwm*fontList.variable.fontName: NotoSans
+!Mwm*fontList.variable.fontSize: 10
+Mwm*Termbar.clientDecoration: none
+
+!xterm
+XTerm*renderFont: True
+XTerm*faceName: go mono
+XTerm*faceSize: 12
+XTerm*vt100.background: TEXT_BG
+XTerm*vt100.foreground: TEXT_FG
+XTerm*vt100.highlightColorMode: True
+XTerm*vt100.highlightSelection: True
+XTerm*vt100.highlightColor: SEL_BG
+XTerm*vt100.highlightTextColor: SEL_FG
+
+!nedit
+Nedit*text.background:		TEXT_BG
+Nedit*text.foreground:		TEXT_FG
+Nedit*text.selectBackground:	SEL_BG
+Nedit*text.selectForeground:	SEL_FG
+
+
+!nedit*enableThinThickness:          False
+!nedit*enableToggleVisual:           True
+!nedit*enableToggleColor:            True
+!nedit*XmToggleButton.indicatorSize: 11
+!nedit*enableEtchedInMenu:           False
+!nedit*text.background:              white
+!nedit*text.selectBackground:        #D0D0FF
+!nedit*statsForm.background:         gray85
+!nedit*statsLine.background:         gray85
+!nedit*bottomShadowColor:            gray65
+!!nedit*topShadowColor:               #fefefe
+!nedit*XmText.background:            white
+!nedit*XmTextField.background:       white
+!nedit*XmList.background:            white
+
+!rofi
+!rofi.color-normal: #fff7e9
+!rofi.color-active: #b24d7a
